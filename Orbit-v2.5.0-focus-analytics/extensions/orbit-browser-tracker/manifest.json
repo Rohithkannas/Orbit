@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Orbit Focus Tracker",
+  "version": "1.0.0",
+  "description": "Locally tracks active time by website domain and reports totals to the Orbit desktop app.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "idle"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:48761/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}
